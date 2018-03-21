@@ -151,7 +151,7 @@
 				<!-- Post Comment -->
 				<h3>Comments</h3>
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 					if(isset($user)){
 						$user = mysqli_real_escape_string($connection, $_SESSION['username']);
 						$comment = mysqli_real_escape_string($connection, $_POST['comment']);
@@ -177,7 +177,7 @@
 					
 				?>
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 					$getcomments = mysqli_query($connection, "SELECT * FROM comments WHERE url = '$link' ORDER BY id DESC");
 					echo "<br>";
 					if ($getcomments->num_rows > 0) {
