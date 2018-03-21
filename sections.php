@@ -98,7 +98,7 @@
 			<div class="col-lg-12">
 				<!-- All the threads -->
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 					
 					$section = $_GET['section'];
 					$getthreads=mysqli_query($connection, "SELECT * FROM thread WHERE section='$section' ORDER BY id DESC LIMIT 50");
