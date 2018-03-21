@@ -9,7 +9,7 @@
 	<body>
 		<h1>Verify</h1>
 		<?php
-			require('dbconnect.php');
+			require('functions/dbconnect.php');
 			if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !empty($_GET['hash'])){
 				// Verify data
 				$email = mysqli_escape_string($connection, $_GET['email']); // Set email variable
