@@ -87,7 +87,7 @@
             <div class="col-lg-12">
 			<?php 
 				session_start();
-				require('dbconnect.php');
+				require('functions/dbconnect.php');
 
 				if(!empty($_POST['username']) && !empty($_POST['password']))
 				{
