@@ -93,7 +93,7 @@
             <div class="col-lg-12">
 				<!-- Main Page to post stuff -->
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 					if(isset($_POST['submit']) AND isset($_POST['title']) && !empty($_POST['title']) AND isset($_POST['message']) && !empty($_POST['message']) AND isset($_POST['section'])){
 						$number = rand(0,1000);
 						$link = md5($number);
