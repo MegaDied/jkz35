@@ -101,7 +101,7 @@
             <!-- Content Column -->
             <div class="col-md-9">
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 					$sql=mysqli_query($connection,"SELECT username, email FROM users WHERE username = '$user'");
 				?>
                 <h2>Global Settings</h2>
