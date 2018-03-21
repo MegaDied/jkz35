@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-lg-12">
 				<?php
-				require('dbconnect.php');
+				require('functions/dbconnect.php');
 					$chatid = $_GET['chatid'];
 					$sql = mysqli_query($connection, "DELETE FROM posts WHERE id = ". $chatid ."");
 					header("refresh:2;url=index.php?error=chatremoved");
