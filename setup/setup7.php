@@ -47,7 +47,7 @@
 				<!-- Setup -->
 				<h2>Information Setup</h2>
 				<?php
-					require("../dbconnect.php");
+					require("../functions/dbconnect.php");
 					
 					$mail = mysqli_real_escape_string($connection, $_POST['mail']);
 					$link = mysqli_real_escape_string($connection, $_POST['link']);
