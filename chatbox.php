@@ -98,7 +98,7 @@
 				<!-- PHP Script for sending a message -->
 				<?php
 					//Bericht verzenden.
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 
 					$latestid="SELECT id FROM posts ORDER BY id DESC LIMIT 25";
 					$post = mysqli_real_escape_string($connection, $_POST['post']);
@@ -136,7 +136,7 @@
 				</form>
 
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 
 					$sql = "SELECT * FROM posts ORDER BY id DESC";
 					$result = mysqli_query($connection, $sql);
