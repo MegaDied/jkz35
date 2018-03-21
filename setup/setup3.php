@@ -52,7 +52,7 @@
 					Wait a minute or so, so your database can process all the table creations. This step only works if the previous step was successfull and you didn't receive any errors.
 				</div>
 				<?php
-					require("../dbconnect.php");
+					require("../functions/dbconnect.php");
 					//Create all the tables
 					//Create users table
 					$usersquery = "--
