@@ -128,7 +128,7 @@
             <div class="col-lg-12">
 				<!-- Main Page to post stuff -->
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 					$link = htmlentities($_GET['link']);
 					$getthread=mysqli_query($connection, "SELECT * FROM thread WHERE link = '$link'");
 					if ($getthread->num_rows > 0) {
