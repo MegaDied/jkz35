@@ -98,7 +98,7 @@
 				<!-- PHP Script for sending a message -->
 				<?php
 					//Bericht verzenden.
-					/*require('dbconnect.php');
+					/*require('functions/dbconnect.php');
 
 					$latestid="SELECT id FROM posts ORDER BY id DESC LIMIT 25";
 					$post = mysqli_real_escape_string($connection, $_POST['post']);
@@ -177,7 +177,7 @@
 				</div>
 				<!-- All the threads -->
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 
 					$getthreads=mysqli_query($connection, "SELECT * FROM thread ORDER BY id DESC LIMIT 50");
 					if ($getthreads->num_rows > 0) {
@@ -205,7 +205,7 @@
 					}
 				?>
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 
 					$currenttime = date("Y-m-d h:i:sa");
 					$unix = strtotime($currenttime);
