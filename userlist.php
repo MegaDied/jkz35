@@ -98,7 +98,7 @@
 				<!-- PHP Script for sending a message -->
 				<h3>Only activated users will be shown!</h3>
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 					
 					
 	
