@@ -145,7 +145,7 @@
 				<a href="chatbox.php">Full chatbox</a>
 				<br />
 				<?php
-					require('dbconnect.php');
+					require('functions/dbconnect.php');
 
 					$sql = "SELECT * FROM posts ORDER BY id DESC LIMIT 15";
 					$result = mysqli_query($connection, $sql);
