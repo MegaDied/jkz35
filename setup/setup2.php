@@ -53,11 +53,6 @@
 					$password = $_POST['password'];
 					$database = $_POST['database'];
 					
-					$dbconnect1 = fopen("../dbconnect.php", "w") or die('<div class="alert alert-danger" role="alert">
-									<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-									<span class="sr-only">Error:</span>
-									Could not open the database file! Please contact jkz35.
-									</div>');
 					$dbconnect2 = fopen("../functions/dbconnect.php", "w") or die('<div class="alert alert-danger" role="alert">
 									<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 									<span class="sr-only">Error:</span>
@@ -73,8 +68,6 @@
 
 	$connection = mysqli_connect($sqlserver, $sqluser, $sqlpass, $sqldb) or die ("Can not connect to the Database. Please try again later." . mysql_error());
 ?>';
-					fwrite($dbconnect1, $txt);
-					fclose($dbconnect1);
 					fwrite($dbconnect2, $txt);
 					fclose($dbconnect2);
 					
