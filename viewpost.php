@@ -1,7 +1,7 @@
 <?php	
 	#THIS IS A CUSTOM SESSION CHECK. DON'T CHANGE!!!
 	session_start();
-	require('../functions/dbconnect.php');
+	require('functions/dbconnect.php');
 	
 	$user = $_SESSION['username'];
 	$userquery = "SELECT username FROM users WHERE username='$user'";
