@@ -1,7 +1,7 @@
 <?php
 	#THIS IS A CUSTOM SESSION CHECK. DON'T CHANGE!!!
 	session_start();
-	require('../dbconnect.php');
+	require('../functions/dbconnect.php');
 	
 	$user = $_SESSION['username'];
 	if(empty($_SESSION['username']))
@@ -125,7 +125,7 @@
                 <h2>Privacy Settings</h2>
                 <p>Only change a setting when you are 100% sure.</p>
 				<?php
-					require('../dbconnect.php');
+					require('../functions/dbconnect.php');
 					if(isset($_POST['submit'])){
 						if(isset($_POST['mailcheck'])){
 							mysqli_query($connection, "UPDATE users SET showmail='0' WHERE username='$user'");
