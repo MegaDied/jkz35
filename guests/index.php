@@ -92,7 +92,7 @@
 				We see that you are not yet registered. Please press register on the top right corner and you will be able to chat and post with other people.
 			</div>
 				<?php
-					require('../dbconnect.php');
+					require('../functions/dbconnect.php');
 					
 					$getthreads=mysqli_query($connection, "SELECT * FROM thread ORDER BY id DESC LIMIT 100");
 					if ($getthreads->num_rows > 0) {
