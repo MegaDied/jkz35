@@ -1,6 +1,5 @@
 <?php	
 	#THIS IS A CUSTOM SESSION CHECK. DON'T CHANGE!!!
-	session_start();
 	include('functions/restricted.php');
 	include('functions/get_site_info.php');
 	
