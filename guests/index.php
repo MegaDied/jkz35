@@ -99,12 +99,12 @@
 						//Data van elke rij neerzetten.
 						echo "<div class='table-responsive'>
 							<table class='table'>
-							<thead>
+							<thread>
 							<tr>
 							<th>Title</th>
 							<th>Section</th>
 							</tr>
-							</thead>
+							</thread>
 							<tbody>
 							";
 						while($threadrow = $getthreads->fetch_assoc()) {
