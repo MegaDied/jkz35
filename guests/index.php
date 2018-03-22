@@ -109,7 +109,7 @@
 							";
 						while($threadrow = $getthreads->fetch_assoc()) {
 							
-							echo "<tr><td><a href='../viewpost.php?link=" . $threadrow['link'] . "'>" . htmlentities($threadrow['title']) . "</a></td>
+							echo "<tr><td><a href='viewpost.php?link=" . $threadrow['link'] . "'>" . htmlentities($threadrow['title']) . "</a></td>
 							<td>" . htmlentities($threadrow['section']) . "</td></tr>";
 							
 						}
