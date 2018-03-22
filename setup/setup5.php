@@ -47,7 +47,7 @@
 				<!-- Setup -->
 				<h2>Admin Setup</h2>
 				<?php
-	require('../dbconnect.php');
+	require('../functions/dbconnect.php');
 	
 	
     if(isset($_POST['username']) && !empty($_POST['username']) AND isset($_POST['mail']) && !empty($_POST['mail']) AND isset($_POST['password']) && !empty($_POST['password']) AND isset($_POST['repassword']) && !empty($_POST['repassword'])){
