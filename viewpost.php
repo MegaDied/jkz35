@@ -154,7 +154,7 @@
 					require('functions/dbconnect.php');
 					if(isset($user)){
 						$user = mysqli_real_escape_string($connection, $_SESSION['username']);
-						$comment = mysqli_real_escape_string($connection, $_POST['comment']);
+						if(!empty($_POST['comment'])){ $comment = mysqli_real_escape_string($connection, $_POST['comment']);}
 						if(isset($_POST['submit']) AND isset($_POST['comment']) && !empty($_POST['comment'])){
 							$sql=mysqli_query($connection, "INSERT INTO comments (id, username, comment, date, url) VALUES (id, '$user', '$comment', now(), '$link')") or die ('Error while posting comment!');
 							echo "Your comment has been posted. The page will reload in 2 seconds.";
