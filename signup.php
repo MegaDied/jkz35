@@ -128,7 +128,7 @@ Username = ".$username."
 ------------------------
 
 Click the link to activate your account. If the link doesn't work, just copy and paste it.
-www.jkz35.xyz/verify.php?email=".$mail."&hash=".$hash."
+http://17689.000webhostapp.com/verify.php?email=".$mail."&hash=".$hash."
 
 Have fun on the site!
 
